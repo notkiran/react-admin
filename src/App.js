@@ -5,10 +5,11 @@ import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import { userInputs, productInputs } from "./formSource";
+import "./style/dark.scss";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app dark">
       <Router>
         <Routes>
           <Route path="/">

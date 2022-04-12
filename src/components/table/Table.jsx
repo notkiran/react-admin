@@ -66,19 +66,19 @@ const List = () => {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell classname="tableCell">Tracking ID</TableCell>
-            <TableCell classname="tableCell">Product</TableCell>
-            <TableCell classname="tableCell">Customer</TableCell>
-            <TableCell classname="tableCell">Date</TableCell>
-            <TableCell classname="tableCell">Amount</TableCell>
-            <TableCell classname="tableCell">Payment Method</TableCell>
-            <TableCell classname="tableCell">Status</TableCell>
+            <TableCell className="tableCell">Tracking ID</TableCell>
+            <TableCell className="tableCell">Product</TableCell>
+            <TableCell className="tableCell">Customer</TableCell>
+            <TableCell className="tableCell">Date</TableCell>
+            <TableCell className="tableCell">Amount</TableCell>
+            <TableCell className="tableCell">Payment Method</TableCell>
+            <TableCell className="tableCell">Status</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <TableRow key={row.id}>
-              <TableCell>{row.id}</TableCell>
+              <TableCell className="tableCell">{row.id}</TableCell>
               <TableCell className="tableCell">
                 <div className="cellWrapper">
                   <img src={row.img} alt="product" className="image" />
